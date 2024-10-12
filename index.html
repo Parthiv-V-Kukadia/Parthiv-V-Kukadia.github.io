@@ -5,14 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parthiv V. Kukadia</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for typed effect */
+        .typed-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ff00;
+            display: inline;
+        }
+        .cursor {
+            display: inline-block;
+            width: 3px;
+            background-color: #00ff00;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Parthiv V. Kukadia</h1>
-        <p>I'm a Developer | AI Enthusiast</p>
+        <p>I'm <span class="typed-text" id="typed-text"></span><span class="cursor" id="cursor"></span></p>
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/parthiv-k/" rel="_blank">
-                <img src="images/linkedin.png" alt="linkedin">
+                <img src="images/linkedin.png" alt="LinkedIn">
             </a> 
             <a href="https://github.com/Parthiv-V-Kukadia" target="_blank">
                 <img src="images/github.png" alt="GitHub">
@@ -25,3 +45,39 @@
             </a>
         </div>
     </header>
+
+    <script>
+        // JavaScript to create the typing effect
+        const textArray = ["a Roboticist", "a Cyber/Quant/Data Analyst", "a Tech Enthusiast","an Engineer"];
+        let currentTextIndex = 0;
+        let currentCharIndex = 0;
+        const typedTextElement = document.getElementById('typed-text');
+        const cursorElement = document.getElementById('cursor');
+
+        function typeText() {
+            if (currentCharIndex < textArray[currentTextIndex].length) {
+                typedTextElement.textContent += textArray[currentTextIndex].charAt(currentCharIndex);
+                currentCharIndex++;
+                setTimeout(typeText, 100);
+            } else {
+                setTimeout(eraseText, 2000); // Pause before erasing
+            }
+        }
+
+        function eraseText() {
+            if (currentCharIndex > 0) {
+                typedTextElement.textContent = textArray[currentTextIndex].substring(0, currentCharIndex - 1);
+                currentCharIndex--;
+                setTimeout(eraseText, 100);
+            } else {
+                currentTextIndex = (currentTextIndex + 1) % textArray.length;
+                setTimeout(typeText, 500); // Pause before typing new text
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(typeText, 1000); // Start typing after 1 second delay
+        });
+    </script>
+</body>
+</html>
