@@ -8,6 +8,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes the full height */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            overflow: hidden; /* Prevent scrollbars from appearing */
+            color: white; /* Default text color */
+            font-family: 'Montserrat', sans-serif; 
+            background-color: #000; /* Example background color, adjust if needed */
+        }
+
+        /* Overlay for better text visibility */
+        .overlay {
+            position: fixed; /* Cover the entire screen */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+            z-index: 0; /* Place it above the video */
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center; 
+            padding: 50px 20px; 
+            position: relative; /* Ensure it appears above the video */
+            z-index: 1; /* Set higher z-index */
+        }
+
+        /* Project Link Styles */
         .github-link {
             display: inline-block; /* Make it a block-level element */
             padding: 10px 15px; /* Add some padding for space */
@@ -23,11 +55,13 @@
             background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
         }
 
+        /* Project Container Styles */
         .project-container {
             display: flex; /* Use flexbox to arrange items */
             flex-wrap: wrap; /* Allow items to wrap to the next line */
             justify-content: space-around; /* Space items evenly */
             margin-bottom: 2rem; /* Space between project sections */
+            z-index: 1; /* Ensure it appears above the overlay */
         }
 
         .project {
@@ -40,10 +74,21 @@
                 width: 100%; /* Full width on smaller screens */
             }
         }
+
+        /* Footer Styles */
+        footer {
+            margin-top: auto; /* Pushes footer to the bottom */
+            position: relative; /* Ensure it appears above the video */
+            z-index: 1; /* Set higher z-index */
+            color: white; /* Text color */
+            text-align: center; /* Center text */
+            padding: 10px 20px; /* Padding for space around content */
+        }
     </style>
 </head>
 
 <body>
+    <div class="overlay"></div>
     <header>
         <h1>My Projects</h1>
         <p><a href="index.html" style="color: #fff; text-decoration: underline;">Back to Main Page</a></p>
