@@ -5,40 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parthiv V. Kukadia</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Additional styles for typed effect */
-        .typed-text {
-            font-size: 24px;
-            font-weight: bold;
-            color: #00ff00;
-            display: inline;
-        }
-        .cursor {
-            display: inline-block;
-            width: 3px;
-            background-color: #00ff00;
-            animation: blink 1s infinite;
-        }
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-        .social-icons a {
-            text-decoration: none; /* Remove underline */
-            border: none; /* Remove border */
-        }
-
-        .social-icons img {
-            width: 30px; /* Set width of the icons */
-            height: 30px; /* Set height of the icons */
-            margin-right: 10px; /* Add space between icons */
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> <!-- Added Montserrat -->
 </head>
+    
 <body>
     <header>
-        <h1>Parthiv Vinubhai Kukadia</h1>
+        <h1>Parthiv V. Kukadia</h1>
         <p>I'm <span class="typed-text" id="typed-text"></span><span class="cursor" id="cursor"></span></p>
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/parthiv-k/" rel="_blank">
@@ -56,9 +28,23 @@
         </div>
     </header>
 
+    <!-- 
+    <section class="demos">
+        <h2>Demos</h2>
+        <div class="demo-item">
+            <a href="https://yourprojectlink.com" class="button">Project 1</a>
+            <p>Description of Project 1</p>
+        </div>
+        <div class="demo-item">
+            <a href="https://yourprojectlink.com" class="button">Project 2</a>
+            <p>Description of Project 2</p>
+        </div>
+    </section> 
+    To add Demos -->
+
     <script>
         // JavaScript to create the typing effect
-        const textArray = ["a Roboticist", "a Cyber/Quant/Data Analyst", "a Tech Enthusiast","an Engineer"];
+        const textArray = ["Developer", "AI Enthusiast", "Tech Enthusiast"];
         let currentTextIndex = 0;
         let currentCharIndex = 0;
         const typedTextElement = document.getElementById('typed-text');
