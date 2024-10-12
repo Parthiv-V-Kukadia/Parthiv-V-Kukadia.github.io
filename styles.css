@@ -5,6 +5,8 @@ body {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
     overflow: hidden; /* Prevent scrollbars from appearing */
+    color: white; /* Default text color */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 /* Video Background */
@@ -16,6 +18,17 @@ body {
     height: 100%; /* Full height */
     object-fit: cover; /* Cover the entire background */
     z-index: -1; /* Place behind other content */
+}
+
+/* Overlay for better text visibility */
+.overlay {
+    position: fixed; /* Cover the entire screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+    z-index: 0; /* Place it above the video */
 }
 
 /* The header takes the top part of the gradient */
@@ -65,7 +78,7 @@ p {
 /* Button styles */
 .button {
     background-color: #238636; /* Green background for buttons */
-    color: white;
+    color: white; /* Text color for buttons */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
