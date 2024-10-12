@@ -31,7 +31,7 @@ body {
     z-index: 0; /* Place it above the video */
 }
 
-/* The header takes the top part of the gradient */
+/* Header */
 header {
     text-align: center; 
     padding: 100px 20px; 
@@ -56,7 +56,7 @@ p {
     margin-bottom: 30px; /* Add some space below */
 }
 
-/* Center and style the social icons */
+/* Social Icons */
 .social-icons {
     display: flex;
     justify-content: center;
