@@ -41,17 +41,17 @@ header {
 
 /* Project Title Styling */
 .project-title {
+    color: white;
     font-size: 2rem; /* Increased size for better visibility */
-    color: white; /* White color */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow for contrast */
     z-index: 1; /* Set higher z-index */
 }
 
 /* Project Description Styling */
 .project-description {
+    color: white;
     font-style: italic;
     font-size: 1.1rem;
-    color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow for contrast */
     z-index: 1; /* Set higher z-index */
 }
