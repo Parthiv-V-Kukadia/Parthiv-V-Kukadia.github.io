@@ -102,7 +102,6 @@ p {
     margin: 0 10px; /* Space between icons */
 }
 
-
 .intro-message {
     color: white; /* Set text color to white */
     text-align: center; /* Center the text */
@@ -122,24 +121,41 @@ p {
     color: white; /* Text color */
     text-align: center; /* Center text */
     padding: 10px 20px; /* Padding for space around content */
-    /* No background color */
 }
 
-.footer::before {
-    content: ""; /* Creates a pseudo-element */
-    position: absolute; /* Positioning */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit; /* Inherit background from the body */
-    z-index: -1; /* Place it below the text */
+/* GitHub Links */
+.github-link {
+    display: inline-block; /* Make it a block-level element */
+    padding: 10px 15px; /* Add some padding for space */
+    border: 2px solid #fff; /* White border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: transparent; /* Transparent background */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
 }
 
-/* Adjust for mobile view */
+.github-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+}
+
+/* Responsive design */
 @media (max-width: 600px) {
     footer {
         font-size: 0.5rem; /* Smaller text on mobile */
         padding: 15px; /* Less padding */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Smaller heading on mobile */
+    }
+
+    p, .typed-text {
+        font-size: 1.5rem; /* Smaller text on mobile */
+    }
+
+    .social-icons img {
+        width: 40px; /* Smaller icons on mobile */
+        height: 40px;
     }
 }
