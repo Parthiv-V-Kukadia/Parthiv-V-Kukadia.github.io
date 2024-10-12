@@ -126,7 +126,6 @@ p {
 
 .location-section h2 {
     font-size: 0.9rem; /* Reduced size */
-    position: relative; /* Ensure it appears above the video */
 }
 
 .footer {
@@ -135,6 +134,7 @@ p {
     color: white; /* Text color */
     text-align: center; /* Center text */
     padding: 10px 20px; /* Padding for space around content */
+    position: relative; /* Ensure it appears above the video */
 }
 
 @media (max-width: 600px) {
