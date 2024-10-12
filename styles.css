@@ -123,22 +123,6 @@ p {
     padding: 10px 20px; /* Padding for space around content */
 }
 
-/* GitHub Links */
-.github-link {
-    display: inline-block; /* Make it a block-level element */
-    padding: 10px 15px; /* Add some padding for space */
-    border: 2px solid #fff; /* White border */
-    border-radius: 5px; /* Rounded corners */
-    background-color: transparent; /* Transparent background */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-    color: #fff; /* White text color */
-    text-decoration: none; /* Remove underline */
-}
-
-.github-link:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
-}
-
 /* Responsive design */
 @media (max-width: 600px) {
     footer {
