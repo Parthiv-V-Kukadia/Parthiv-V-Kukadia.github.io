@@ -51,6 +51,7 @@ p {
 }
 
 .social-icons img {
+    filter; brightness(0) invert(1); /* Change color to white */
     width: 50px; /* Increased icon size */
     height: 50px; /* Maintain aspect ratio */
     margin: 0 10px; /* Space between icons */
