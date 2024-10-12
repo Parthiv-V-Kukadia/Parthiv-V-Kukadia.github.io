@@ -1,6 +1,6 @@
 /* Apply a completely blue background */
 body {
-    background-color: #004080; /* Dark blue color */
+    background: linear-gradient(to bottom, #0099FF, #003366); /* Gradient from light to dark blue */
     color: white;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
