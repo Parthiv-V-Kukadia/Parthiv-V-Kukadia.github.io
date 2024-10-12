@@ -115,7 +115,7 @@ p {
     color: white; /* Text color */
     text-align: center; /* Center text */
     padding: 10px 20px; /* Padding for space around content */
-    font-size: 0.6 rem; /* Smaller font size */
+    font-size: 0.4 rem; /* Smaller font size */
 }
 
 @media (max-width: 600px) {
