@@ -44,6 +44,7 @@ header {
     font-size: 2rem; /* Increased size for better visibility */
     color: #fff; /* White color */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow for contrast */
+    z-index: 1; /* Set higher z-index */
 }
 
 /* Project Description Styling */
@@ -52,6 +53,7 @@ header {
     font-size: 1.1rem;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow for contrast */
+    z-index: 1; /* Set higher z-index */
 }
 
 /* 'View Project on GitHub' link */
@@ -100,7 +102,7 @@ video, img {
     max-width: 400px; /* Set a fixed width */
     max-height: 300px; /* Set a fixed height */
     margin: 0 auto; /* Center the elements */
-    object-fit: cover; /* Maintain aspect ratio while filling the fixed size */
+    object-fit: fill; /* Maintain aspect ratio while filling the fixed size */
 }
 
 /* Full-width sections */
