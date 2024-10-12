@@ -6,13 +6,38 @@
     <title>Parthiv V. Kukadia</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> <!-- Added Montserrat -->
+    <style>
+        .project-link-box {
+            background-color: rgba(255, 255, 255, 0.1); /* Light background */
+            border: 2px solid #fff; /* White border */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Padding for inner content */
+            margin-top: 2rem; /* Space above the project link */
+            text-align: center; /* Center the text */
+        }
+
+        .project-link {
+            display: inline-block; /* Make it a block-level element */
+            padding: 10px 15px; /* Add some padding for space */
+            border: 2px solid #fff; /* White border */
+            border-radius: 5px; /* Rounded corners */
+            background-color: transparent; /* Transparent background */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+            color: #fff; /* White text color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .project-link:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+        }
+    </style>
 </head>
     
 <body>
     <!-- Video Background -->
     <video autoplay muted loop id="background-video">
-    <source src="images/stars.mp4" type="video/mp4"> 
-    Your browser does not support the video tag.
+        <source src="images/stars.mp4" type="video/mp4"> 
+        Your browser does not support the video tag.
     </video>
     
     <!-- Overlay Div -->
@@ -37,50 +62,43 @@
             </a>
         </div>
     </header>
+
+    <!-- View Demo Projects Section -->
+    <div class="project-link-box">
+        <h2 style="color: white;">View Demo Projects</h2>
+        <p>
+            <a href="projects.html" class="project-link">
+                CHECK OUT MY PROJECT DEMOS!
+            </a>
+        </p>
+    </div>
         
     <div class="intro-message" style="text-align: center; color: white;">
         <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">Greetings, Digital Wanderer! Ready to Explore? 🚀 </p>
-        <p style="font-size: 0.9rem; margin-bottom: 0.2rem;">👆 Click on the icons to zoom into my LinkedIn galaxy, browse my GitHub Portfolio, shoot me a message, or check out my Qualifications!</p>
+        <p style="font-size: 0.9rem; margin-bottom: 0.2rem;">👆 Click on the icons to zoom into my LinkedIn galaxy, browse my GitHub Portfolio, shoot me a message, check out my Qualifications, or view my Demos!</p>
         <p style="font-size: 0.9rem; margin-bottom: 0.2rem;">🤖 I can't wait to connect with you soon! Let’s unleash some tech magic together! ✨</p>
     </div>
 
     <!-- Footer Message Section -->
     <div class="footer">
-    <div class="location-section" style="text-align: center; margin-top: 1rem;">
-        <h2 style="font-size: 1.2rem;">📍 My Global Footprint</h2>
-        <p style="font-size: 0.9rem; font-weight: normal;">
-            <span class="location">🇹🇭 Bangkok</span>
-            <span class="separator"> • </span>
-            <span class="location">🇭🇰 Hong Kong</span>
-            <span class="separator"> • </span>
-            <span class="location">🇮🇳 Mumbai</span>
-            <span class="separator"> • </span>
-            <span class="location">🇺🇸 Chicago</span>
-            <span class="separator"> • </span>
-            <span class="location">🇺🇸 New York</span>
-            <span class="separator"> • </span>
-            <span class="location">🇸🇬 Singapore</span>
-        </p>
+        <div class="location-section" style="text-align: center; margin-top: 1rem;">
+            <h2 style="font-size: 1.2rem;">📍 My Global Footprint</h2>
+            <p style="font-size: 0.9rem; font-weight: normal;">
+                <span class="location">🇹🇭 Bangkok</span>
+                <span class="separator"> • </span>
+                <span class="location">🇭🇰 Hong Kong</span>
+                <span class="separator"> • </span>
+                <span class="location">🇮🇳 Mumbai</span>
+                <span class="separator"> • </span>
+                <span class="location">🇺🇸 Chicago</span>
+                <span class="separator"> • </span>
+                <span class="location">🇺🇸 New York</span>
+                <span class="separator"> • </span>
+                <span class="location">🇸🇬 Singapore</span>
+            </p>
+        </div>
+        <p style="font-size: 0.7rem; text-align: center; font-weight: italic;">© 2024 Parthiv Vinubhai Kukadia. All rights reserved.</p>
     </div>
-    <p style="font-size: 0.7rem; text-align: center; font-weight: italic;">© 2024 Parthiv Vinubhai Kukadia. All rights reserved.</p>
-</div>
-        
-
-    <!-- 
-    <section class="demos">
-        <h2>Demos</h2>
-        <div class="demo-item">
-            <a href="https://yourprojectlink.com" class="button">Project 1</a>
-            <p>Description of Project 1</p>
-        </div>
-        <div class="demo-item">
-            <a href="https://yourprojectlink.com" class="button">Project 2</a>
-            <p>Description of Project 2</p>
-        </div>
-    </section> 
-    To add Demos -->
-
-
 
     <script>
         // JavaScript to create the typing effect
