@@ -1,41 +1,56 @@
+/* Apply a completely blue background */
 body {
-    background-color: #0d1117;
+    background-color: #004080; /* Dark blue color */
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Style the header */
 header {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #161b22;
+    text-align: left;
+    padding: 100px 20px; /* Increased padding for spacing */
+    background-color: #004080; /* Same blue background */
 }
 
+/* Style the name */
 h1 {
-    font-size: 3rem;
-    color: #58a6ff;
+    font-size: 4rem; /* Larger font size for emphasis */
+    color: white; /* White color for the name */
+    font-weight: bold; /* Make it bold */
+    margin: 0;
+    padding-bottom: 20px; /* Add some spacing below the name */
 }
 
+/* Style the typing effect text */
 p {
-    font-size: 1.5rem;
-    color: #8b949e;
+    font-size: 2rem;
+    font-weight: bold; /* Make the subtitle bold */
+    color: white; /* Gray color for the text under name */
+    margin-top: 0;
+    margin-bottom: 30px; /* Add some space below */
+}
+
+/* Center and style the social icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Spacing between icons and text */
+}
+
+.social-icons a {
+    text-decoration: none; /* Remove link underlines */
+    border: none; /* Remove borders */
 }
 
 .social-icons img {
-    width: 40px;
-    margin: 0 10px;
+    width: 30px; /* Icon size */
+    height: 30px;
+    margin-right: 10px; /* Add space between icons */
 }
 
-.demos {
-    padding: 20px;
-    text-align: center;
-}
-
-.demo-item {
-    margin: 20px;
-}
-
+/* Button styles */
 .button {
     background-color: #238636;
     color: white;
@@ -46,4 +61,25 @@ p {
 
 .button:hover {
     background-color: #2ea043;
+}
+
+/* Additional styles for the typed effect */
+.typed-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ff00; /* Green color for typing effect */
+    display: inline;
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #00ff00; /* Green color for blinking cursor */
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
