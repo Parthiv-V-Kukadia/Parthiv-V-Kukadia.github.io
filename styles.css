@@ -14,7 +14,7 @@ body {
 
 /* The header takes the top part of the gradient */
 header {
-    text-align: left; 
+    text-align: center; 
     padding: 100px 20px; 
     background: linear-gradient(to bottom, #001f3f, transparent); /* Gradient from dark blue to transparent */
     height: 300px; /* Adjust based on your design */
@@ -22,7 +22,7 @@ header {
 
 /* Style the name */
 h1 {
-    font-size: 4rem; /* Larger font size for emphasis */
+    font-size: 4 rem; /* Larger font size for emphasis */
     color: white; /* White color for the name */
     font-weight: bold; /* Make it bold */
     margin: 0;
@@ -106,7 +106,7 @@ p {
 }
 
 .location-section h2 {
-    font-size: 1.5rem; /* Reduced size */
+    font-size: 1 rem; /* Reduced size */
 }
 
 .footer {
@@ -115,7 +115,7 @@ p {
     color: white; /* Text color */
     text-align: center; /* Center text */
     padding: 10px 20px; /* Padding for space around content */
-    font-size: 0.8rem; /* Smaller font size */
+    font-size: 0.6 rem; /* Smaller font size */
 }
 
 @media (max-width: 600px) {
