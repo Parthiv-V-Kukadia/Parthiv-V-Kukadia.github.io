@@ -22,7 +22,7 @@ header {
 
 /* Style the name */
 h1 {
-    font-size: 4 rem; /* Larger font size for emphasis */
+    font-size: 4rem; /* Larger font size for emphasis */
     color: white; /* White color for the name */
     font-weight: bold; /* Make it bold */
     margin: 0;
@@ -31,7 +31,7 @@ h1 {
 
 /* Style the typing effect text */
 p {
-    font-size: 2 rem;
+    font-size: 2rem;
     font-weight: bold; /* Make the subtitle bold */
     color: white; /* White color for the text under name */
     margin-top: 0;
@@ -71,7 +71,7 @@ p {
 
 /* Additional styles for the typed effect */
 .typed-text {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
     color: #00ff00; /* Green color for typing effect */
     display: inline;
@@ -106,7 +106,7 @@ p {
 }
 
 .location-section h2 {
-    font-size: 0.5 rem; /* Reduced size */
+    font-size: 1rem; /* Reduced size */
 }
 
 .footer {
@@ -120,7 +120,7 @@ p {
 
 @media (max-width: 600px) {
     footer {
-        font-size: 0.1rem; /* Smaller text on mobile */
+        font-size: 0.5rem; /* Smaller text on mobile */
         padding: 15px; /* Less padding */
     }
 }
