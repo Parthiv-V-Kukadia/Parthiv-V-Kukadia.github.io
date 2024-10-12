@@ -9,7 +9,7 @@ body {
 
 /* Style the header */
 header {
-    text-align: left;
+    text-align: center;
     padding: 100px 20px; /* Increased padding for spacing */
     background-color: #004080; /* Same blue background */
 }
