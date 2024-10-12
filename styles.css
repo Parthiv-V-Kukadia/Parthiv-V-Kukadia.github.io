@@ -102,6 +102,31 @@ p {
     margin: 0 10px; /* Space between icons */
 }
 
+.project-link-box {
+        background-color: rgba(255, 255, 255, 0.1); /* Light background */
+        border: 2px solid #fff; /* White border */
+        border-radius: 5px; /* Reduced border-radius for a less rounded effect */
+        padding: 10px; /* Reduced padding for smaller inner content area */
+        margin-top: 1rem; /* Reduced space above the project link */
+        text-align: center; /* Center the text */
+    }
+    
+    .project-link {
+        display: inline-block; /* Make it a block-level element */
+        padding: 5px 10px; /* Reduced padding for smaller link box */
+        border: 2px solid #fff; /* White border */
+        border-radius: 3px; /* Smaller rounded corners */
+        background-color: transparent; /* Transparent background */
+        transition: background-color 0.3s; /* Smooth transition for hover effect */
+        color: #fff; /* White text color */
+        text-decoration: none; /* Remove underline */
+        font-size: 1.5rem;
+    }
+    
+    .project-link:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    }
+
 .intro-message {
     color: white; /* Set text color to white */
     text-align: center; /* Center the text */
