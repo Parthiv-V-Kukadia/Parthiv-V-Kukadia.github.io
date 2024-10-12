@@ -1,6 +1,6 @@
 /* Apply a completely blue background */
 body {
-    background: linear-gradient(to bottom, #0099FF, #003366); /* Gradient from light to dark blue */
+    background: linear-gradient(to bottom, #001f3f, #001d3f, #001a4d, #001e5c, #002b8d); /* Gradient for starry night */
     color: white;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
