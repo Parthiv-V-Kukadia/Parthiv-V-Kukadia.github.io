@@ -8,101 +8,107 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Ensure the body takes the full height */
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-            overflow: hidden; /* Prevent scrollbars from appearing */
-            color: white; /* Default text color */
-            font-family: 'Montserrat', sans-serif;
-            background-color: #000; /* Example background color, adjust if needed */
-        }
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #000;
+    }
 
-        /* Overlay for better text visibility */
-        .overlay {
-            position: fixed; /* Cover the entire screen */
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
-            z-index: 0; /* Place it above the video */
-        }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+    }
 
-        /* Header Styles */
-        header {
-            text-align: center;
-            padding: 50px 20px;
-            position: relative; /* Ensure it appears above the video */
-            z-index: 1; /* Set higher z-index */
-        }
+    header {
+        text-align: center;
+        padding: 50px 20px;
+        position: relative;
+        z-index: 1;
+    }
 
-        /* Project Title and Description Styles */
-        .project-title {
-            font-size: 1.8rem; /* Increase the title size */
-            margin: 0; /* Remove default margin */
-        }
+    /* Align titles and descriptions */
+    .project-title, .project-description {
+        text-align: center;
+    }
 
-        .project-description {
-            font-size: 0.9rem; /* Reduce the description size */
-            margin: 0.5rem 0; /* Add some space around the description */
-        }
+    /* Reduce the size of the 'View Project on GitHub' link */
+    .github-link {
+        display: inline-block;
+        padding: 5px 10px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        background-color: transparent;
+        transition: background-color 0.3s;
+        color: #ccc;
+        text-decoration: none;
+        font-size: 0.8rem; /* Smaller text size */
+    }
+    
+    .github-link {
+        position: relative;
+        z-index: 3; /* Ensure it's above other elements */
+    }
+    .github-link:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
 
-        /* Project Link Styles */
-        .github-link {
-            display: inline-block; /* Make it a block-level element */
-            padding: 10px 15px; /* Add some padding for space */
-            border: 2px solid #fff; /* White border */
-            border-radius: 5px; /* Rounded corners */
-            background-color: transparent; /* Transparent background */
-            transition: background-color 0.3s; /* Smooth transition for hover effect */
-            color: #ccc; /* Light gray text color for links */
-            text-decoration: none; /* Remove underline */
-        }
+    /* Consistent size for videos and images */
+    video, img {
+        width: 100%;
+        height: auto;
+        max-width: 400px; /* Standard width for videos/images */
+        margin: 0 auto; /* Center the elements */
+        display: block; /* Ensures block-level display for centering */
+    }
 
-        .github-link:hover {
-            background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
-        }
+    /* Standard layout for project containers */
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Spreads the projects evenly */
+        margin-bottom: 2rem;
+        z-index: 1;
+    }
 
-        /* Project Container Styles */
-        .project-container {
-            display: flex; /* Use flexbox to arrange items */
-            flex-wrap: wrap; /* Allow items to wrap to the next line */
-            justify-content: space-around; /* Space items evenly */
-            margin-bottom: 2rem; /* Space between project sections */
-            z-index: 1; /* Ensure it appears above the overlay */
-        }
+    .project {
+        flex-basis: 45%; /* Adjusted width for uniform sizing */
+        margin-bottom: 1rem;
+        text-align: center; /* Center everything */
+    }
 
+    .full-width {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
         .project {
-            margin: 1rem; /* Space around individual projects */
-            width: 45%; /* Width of each project */
+            flex-basis: 100%; /* Full width for smaller screens */
         }
+    }
 
-        .full-width {
-            width: 100%; /* Full width */
-            text-align: center; /* Center text */
-            margin-bottom: 2rem; /* Space below the project */
-        }
-
-        @media (max-width: 768px) {
-            .project {
-                width: 100%; /* Full width on smaller screens */
-            }
-        }
-
-        /* Footer Styles */
-        footer {
-            margin-top: auto; /* Pushes footer to the bottom */
-            position: relative; /* Ensure it appears above the video */
-            z-index: 1; /* Set higher z-index */
-            color: white; /* Text color */
-            text-align: center; /* Center text */
-            padding: 10px 20px; /* Padding for space around content */
-        }
-    </style>
+    footer {
+        margin-top: auto;
+        position: relative;
+        z-index: 1;
+        color: white;
+        text-align: center;
+        padding: 10px 20px;
+    }
+</style>
 </head>
 
 <body>
@@ -117,13 +123,11 @@
     
     <header>
         <h1>My Projects</h1>
-<p><a href="index.html" style="color: #fff; text-decoration: underline; font-size: 1.5rem;">Back to Main Page</a></p>
+        <p><a href="index.html" style="color: #fff; text-decoration: underline; font-size: 1rem;">Back to Main Page</a></p>
     </header>
 
     <!-- Project Showcase Section -->
     <section id="projects" class="projects-section" style="text-align: center; margin-top: 2rem;">
-        <h2>Projects</h2>
-
         <!-- Project 1 and Project 2 -->
         <div class="project-container">
             <div class="project">
@@ -135,7 +139,7 @@
                 </video>
                 <p>
                     <a href="https://github.com/Parthiv-V-Kukadia/Simultaneous-Localization-and-Mapping-via-Monte-Carlo-Localization"
-                        class="github-link">
+                        class="github-link" target="_blank">
                         View Project on GitHub
                     </a>
                 </p>
@@ -150,7 +154,7 @@
                 </video>
                 <p>
                     <a href="https://github.com/Parthiv-V-Kukadia/Gravity-Assisted-Under-actuated-Robot-Arm"
-                        class="github-link">
+                        class="github-link" target="_blank">
                         View Project on GitHub
                     </a>
                 </p>
@@ -175,7 +179,7 @@
 
             <p>
                 <a href="https://github.com/Parthiv-V-Kukadia/Micro-Quadcopter-Topographical-Mapping"
-                    class="github-link">
+                    class="github-link" target="_blank">
                     View Project on GitHub
                 </a>
             </p>
@@ -192,7 +196,7 @@
                 </video>
                 <p>
                     <a href="https://github.com/Parthiv-V-Kukadia/Unpowered-Glider"
-                        class="github-link">
+                        class="github-link" target="_blank">
                         View Project on GitHub
                     </a>
                 </p>
@@ -207,7 +211,7 @@
                 </video>
                 <p>
                     <a href="https://github.com/Parthiv-V-Kukadia/Double-Pendulum"
-                        class="github-link">
+                        class="github-link" target="_blank">
                         View Project on GitHub
                     </a>
                 </p>
@@ -225,7 +229,7 @@
             </div>
             <div style="margin: 1rem 0;">
                 <a href="https://github.com/Parthiv-V-Kukadia/Localization-Using-GPS-and-IMU-Information-via-Extended-Kalman-Filter-EKF-Framework"
-                    class="github-link">
+                    class="github-link" target="_blank">
                     View Project on GitHub
                 </a>
             </div>
@@ -234,7 +238,7 @@
     </section> <!-- End of projects section -->
 
     <footer>
-        <p>&copy; 2024 Parthiv Kukadia</p>
+        <p style="font-size: 0.7rem; text-align: center; font-weight: italic;">© 2024 Parthiv Vinubhai Kukadia. All rights reserved.</p>
     </footer>
 </body>
 
