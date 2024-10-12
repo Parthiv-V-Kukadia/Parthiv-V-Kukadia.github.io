@@ -91,7 +91,7 @@ p {
 }
 
 .location-section {
-    text-align: left; 
+    text-align: center; 
     margin: 20px 0; 
 }
 
@@ -106,21 +106,21 @@ p {
 }
 
 .location-section h2 {
-    font-size: 1 rem; /* Reduced size */
+    font-size: 0.5 rem; /* Reduced size */
 }
 
 .footer {
     margin-top: auto; /* Pushes footer to the bottom */
     background: linear-gradient(to top, #001f3f, #001d3f, #001a4d, #001e5c, #002b8d); /* Gradient for footer */
     color: white; /* Text color */
-    text-align: center; /* Center text */
+    text-align: left; /* Center text */
     padding: 10px 20px; /* Padding for space around content */
-    font-size: 0.4 rem; /* Smaller font size */
+    font-size: 0.1 rem; /* Smaller font size */
 }
 
 @media (max-width: 600px) {
     footer {
-        font-size: 0.9rem; /* Smaller text on mobile */
+        font-size: 0.1rem; /* Smaller text on mobile */
         padding: 15px; /* Less padding */
     }
 }
