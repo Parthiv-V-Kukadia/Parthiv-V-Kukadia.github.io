@@ -130,6 +130,7 @@ p {
 .intro-message {
     color: #fff; /* Set text color to white */
     text-align: center; /* Center the text */
+    z-index: 1; /* Set higher z-index */
 }
 
 .intro-message p {
