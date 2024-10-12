@@ -1,17 +1,18 @@
 /* Apply a completely blue background */
 body {
-    background: linear-gradient(to bottom, #001f3f, #001d3f, #001a4d, #001e5c, #002b8d); /* Gradient for starry night */
+    background: linear-gradient(to bottom, #001f3f 0%, #001d3f 25%, #001a4d 50%, #001e5c 75%, #002b8d 100%); 
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
     margin: 0;
     padding: 0;
 }
 
-/* Style the header */
+/* The header takes the top part of the gradient */
 header {
-    text-align: center;
-    padding: 100px 20px; /* Increased padding for spacing */
-    background-color: #004080; /* Same blue background */
+    text-align: left; 
+    padding: 100px 20px; 
+    background: linear-gradient(to bottom, #001f3f, transparent); /* Gradient from dark blue to transparent */
+    height: 300px; /* Adjust based on your design */
 }
 
 /* Style the name */
@@ -27,7 +28,7 @@ h1 {
 p {
     font-size: 2rem;
     font-weight: bold; /* Make the subtitle bold */
-    color: white; /* Gray color for the text under name */
+    color: white; /* White color for the text under name */
     margin-top: 0;
     margin-bottom: 30px; /* Add some space below */
 }
@@ -82,4 +83,15 @@ p {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+.location-section {
+    text-align: center; /* Align text to the left */
+    margin: 20px 0; /* Spacing around the section */
+}
+
+.separator {
+    display: inline; /* Keeps the dot inline */
+    margin: 0 10px; /* Space around the dot */
+    color: white; /* Adjust the color of the dots if desired */
 }
