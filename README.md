@@ -1,3 +1,3 @@
 # Parthiv-V-Kukadia.github.io
 
-Building my website to represent Parthiv.
+Building a website to represent Parthiv.
