@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,7 @@
             padding: 0; /* Remove default padding */
             overflow: hidden; /* Prevent scrollbars from appearing */
             color: white; /* Default text color */
-            font-family: 'Montserrat', sans-serif; 
+            font-family: 'Montserrat', sans-serif;
             background-color: #000; /* Example background color, adjust if needed */
         }
 
@@ -33,10 +34,21 @@
 
         /* Header Styles */
         header {
-            text-align: center; 
-            padding: 50px 20px; 
+            text-align: center;
+            padding: 50px 20px;
             position: relative; /* Ensure it appears above the video */
             z-index: 1; /* Set higher z-index */
+        }
+
+        /* Project Title and Description Styles */
+        .project-title {
+            font-size: 1.8rem; /* Increase the title size */
+            margin: 0; /* Remove default margin */
+        }
+
+        .project-description {
+            font-size: 0.9rem; /* Reduce the description size */
+            margin: 0.5rem 0; /* Add some space around the description */
         }
 
         /* Project Link Styles */
@@ -47,7 +59,7 @@
             border-radius: 5px; /* Rounded corners */
             background-color: transparent; /* Transparent background */
             transition: background-color 0.3s; /* Smooth transition for hover effect */
-            color: #fff; /* White text color */
+            color: #ccc; /* Light gray text color for links */
             text-decoration: none; /* Remove underline */
         }
 
@@ -69,6 +81,12 @@
             width: 45%; /* Width of each project */
         }
 
+        .full-width {
+            width: 100%; /* Full width */
+            text-align: center; /* Center text */
+            margin-bottom: 2rem; /* Space below the project */
+        }
+
         @media (max-width: 768px) {
             .project {
                 width: 100%; /* Full width on smaller screens */
@@ -88,43 +106,51 @@
 </head>
 
 <body>
+        <!-- Video Background -->
+    <video autoplay muted loop id="background-video">
+        <source src="images/stars.mp4" type="video/mp4"> 
+        Your browser does not support the video tag.
+    </video>
+    
+    <!-- Overlay Div -->
     <div class="overlay"></div>
+    
     <header>
         <h1>My Projects</h1>
-        <p><a href="index.html" style="color: #fff; text-decoration: underline;">Back to Main Page</a></p>
+<p><a href="index.html" style="color: #fff; text-decoration: underline; font-size: 1.5rem;">Back to Main Page</a></p>
     </header>
 
     <!-- Project Showcase Section -->
-    <section id="projects" class="projects-section" style="text-align: center; color: white; margin-top: 2rem;">
+    <section id="projects" class="projects-section" style="text-align: center; margin-top: 2rem;">
         <h2>Projects</h2>
 
         <!-- Project 1 and Project 2 -->
         <div class="project-container">
             <div class="project">
-                <h3>Simultaneous Localization and Mapping via Monte Carlo Localization</h3>
-                <p>This project implements FastSLAM for UAV navigation: A particle filter-based approach for simultaneous localization and mapping in unknown environments.</p>
+                <h3 class="project-title">Simultaneous Localization and Mapping via Monte Carlo Localization</h3>
+                <p class="project-description">This project implements FastSLAM for UAV navigation: A particle filter-based approach for simultaneous localization and mapping in unknown environments.</p>
                 <video controls style="width: 100%; margin-bottom: 1rem;">
                     <source src="projects/slam.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <p>
-                    <a href="https://github.com/Parthiv-V-Kukadia/Simultaneous-Localization-and-Mapping-via-Monte-Carlo-Localization" 
-                       class="github-link">
+                    <a href="https://github.com/Parthiv-V-Kukadia/Simultaneous-Localization-and-Mapping-via-Monte-Carlo-Localization"
+                        class="github-link">
                         View Project on GitHub
                     </a>
                 </p>
             </div>
 
             <div class="project">
-                <h3>Controller Design and Stability Analysis for a Gravity-Assisted Under-Actuated Robot Arm Vehicle</h3>
-                <p>Designed and tested a controller for a gravity-assisted under-actuated robot arm vehicle, focusing on linearization, controllability, and stability analysis.</p>
+                <h3 class="project-title">Controller Design and Stability Analysis for a Gravity-Assisted Under-Actuated Robot Arm Vehicle</h3>
+                <p class="project-description">Designed and tested a controller for a gravity-assisted under-actuated robot arm vehicle, focusing on linearization, controllability, and stability analysis.</p>
                 <video controls style="width: 100%; margin-bottom: 1rem;">
                     <source src="projects/GravAssistedArm.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <p>
-                    <a href="https://github.com/Parthiv-V-Kukadia/Gravity-Assisted-Under-actuated-Robot-Arm" 
-                       class="github-link">
+                    <a href="https://github.com/Parthiv-V-Kukadia/Gravity-Assisted-Under-actuated-Robot-Arm"
+                        class="github-link">
                         View Project on GitHub
                     </a>
                 </p>
@@ -132,10 +158,10 @@
         </div> <!-- End of project-container -->
 
         <!-- Project 3 -->
-        <div class="project" style="margin-bottom: 2rem;">
-            <h3>Topographical Mapping via a Micro-Quadcopter</h3>
-            <p>Utilizing a microquadcopter for precise topographical mapping, integrating aerial imagery and data processing to create detailed terrain models.</p>
-            
+        <div class="project full-width">
+            <h3 class="project-title">Topographical Mapping via a Micro-Quadcopter</h3>
+            <p class="project-description">Utilizing a microquadcopter for precise topographical mapping, integrating aerial imagery and data processing to create detailed terrain models.</p>
+
             <div class="video-container" style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
                 <video controls style="width: 45%;">
                     <source src="projects/Topoflight.mp4" type="video/mp4">
@@ -146,42 +172,42 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
-        
+
             <p>
-                <a href="https://github.com/Parthiv-V-Kukadia/Micro-Quadcopter-Topographical-Mapping" 
-                   class="github-link">
+                <a href="https://github.com/Parthiv-V-Kukadia/Micro-Quadcopter-Topographical-Mapping"
+                    class="github-link">
                     View Project on GitHub
                 </a>
             </p>
-        </div>  
+        </div>
 
         <!-- Project 4 and Project 5 -->
         <div class="project-container">
             <div class="project">
-                <h3>Controller Design and Flight Data Collection for an Unpowered Glider Simulation</h3>
-                <p>Developed and tested a controller for an unpowered glider through 1,000 simulation runs to collect and analyze flight data.</p>
+                <h3 class="project-title">Controller Design and Flight Data Collection for an Unpowered Glider Simulation</h3>
+                <p class="project-description">Developed and tested a controller for an unpowered glider through 1,000 simulation runs to collect and analyze flight data.</p>
                 <video controls style="width: 100%; margin-bottom: 1rem;">
                     <source src="projects/UnpowGlider.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <p>
-                    <a href="https://github.com/Parthiv-V-Kukadia/Unpowered-Glider" 
-                       class="github-link">
+                    <a href="https://github.com/Parthiv-V-Kukadia/Unpowered-Glider"
+                        class="github-link">
                         View Project on GitHub
                     </a>
                 </p>
             </div>
 
             <div class="project">
-                <h3>Visualizing the Double Pendulum</h3>
-                <p>A dynamic simulation showcasing the chaotic motion and intricate behavior of a double pendulum system.</p>
+                <h3 class="project-title">Visualizing the Double Pendulum</h3>
+                <p class="project-description">A dynamic simulation showcasing the chaotic motion and intricate behavior of a double pendulum system.</p>
                 <video controls style="width: 100%; margin-bottom: 1rem;">
                     <source src="projects/DoublePendulum.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <p>
-                    <a href="https://github.com/Parthiv-V-Kukadia/Double-Pendulum" 
-                       class="github-link">
+                    <a href="https://github.com/Parthiv-V-Kukadia/Double-Pendulum"
+                        class="github-link">
                         View Project on GitHub
                     </a>
                 </p>
@@ -189,25 +215,27 @@
         </div> <!-- End of project-container -->
 
         <!-- Project 6 -->
-        <div class="project" style="margin-bottom: 2rem;">
-          <h3>Localization Using GPS and IMU Information via an Extended Kalman Filter Framework</h3>
-          <p>Estimating NED position and velocity using Extended Kalman Filter: Enhancing UAV state estimation through data fusion and sensor update frequency manipulation.</p>
-          <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 1rem;">
-            <img src="projects/EKFPos.png" alt="EKF Position" style="width: 300px;">
-            <img src="projects/EKFVel.png" alt="EKF Velocity" style="width: 300px;">
-          </div>
-          <div style="margin: 1rem 0;">
-            <a href="https://github.com/Parthiv-V-Kukadia/Localization-Using-GPS-and-IMU-Information-via-Extended-Kalman-Filter-EKF-Framework" 
-               class="github-link">
-                View Project on GitHub
-            </a>
-          </div>
+        <div class="project full-width">
+            <h3 class="project-title">Localization Using GPS and IMU Information via an Extended Kalman Filter Framework</h3>
+            <p class="project-description">Estimating NED position and velocity using Extended Kalman Filter: Enhancing UAV state estimation through data fusion and sensor update frequency manipulation.</p>
+
+            <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 1rem;">
+                <img src="projects/EKFPos.png" alt="EKF Position" style="width: 300px;">
+                <img src="projects/EKFVel.png" alt="EKF Velocity" style="width: 300px;">
+            </div>
+            <div style="margin: 1rem 0;">
+                <a href="https://github.com/Parthiv-V-Kukadia/Localization-Using-GPS-and-IMU-Information-via-Extended-Kalman-Filter-EKF-Framework"
+                    class="github-link">
+                    View Project on GitHub
+                </a>
+            </div>
         </div>
 
-    </section>
-    
+    </section> <!-- End of projects section -->
+
     <footer>
-        <p style="font-size: 0.7rem; text-align: center; font-weight: italic;">© 2024 Parthiv Vinubhai Kukadia. All rights reserved.</p>
+        <p>&copy; 2024 Parthiv Kukadia</p>
     </footer>
 </body>
+
 </html>
