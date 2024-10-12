@@ -1,10 +1,15 @@
-/* Apply a completely blue background */
 body {
     background: linear-gradient(to bottom, #001f3f 0%, #001d3f 25%, #001a4d 50%, #001e5c 75%, #002b8d 100%); 
     color: white;
     font-family: 'Montserrat', sans-serif; 
     margin: 0;
     padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes the full height */
 }
 
 /* The header takes the top part of the gradient */
@@ -46,9 +51,9 @@ p {
 }
 
 .social-icons img {
-    width: 30px; /* Icon size */
-    height: 30px;
-    margin-right: 10px; /* Add space between icons */
+    width: 50px; /* Increased icon size */
+    height: 50px; /* Maintain aspect ratio */
+    margin: 0 10px; /* Space between icons */
 }
 
 /* Button styles */
@@ -86,23 +91,31 @@ p {
 }
 
 .location-section {
-    text-align: center; /* Align text to the left */
-    margin: 20px 0; /* Spacing around the section */
+    text-align: left; 
+    margin: 20px 0; 
 }
 
 .separator {
     display: inline; /* Keeps the dot inline */
     margin: 0 10px; /* Space around the dot */
-    color: white; /* Adjust the color of the dots if desired */
 }
 
-footer {
-    background-color: #001f3f; /* Example: Dark blue */
+.location {
+    display: inline-block; /* Keeps locations inline */
+    margin-right: 15px; /* Space between each location */
+}
+
+.location-section h2 {
+    font-size: 1.5rem; /* Reduced size */
+}
+
+.footer {
+    margin-top: auto; /* Pushes footer to the bottom */
+    background: linear-gradient(to top, #001f3f, #001d3f, #001a4d, #001e5c, #002b8d); /* Gradient for footer */
     color: white; /* Text color */
-    padding: 20px; /* Padding for space around content */
-    text-align: center; /* Centering footer text */
-    font-size: 1rem; /* Adjust size as needed */
-    margin: 10px 0; /* Spacing between footer elements */
+    text-align: center; /* Center text */
+    padding: 10px 20px; /* Padding for space around content */
+    font-size: 0.8rem; /* Smaller font size */
 }
 
 @media (max-width: 600px) {
