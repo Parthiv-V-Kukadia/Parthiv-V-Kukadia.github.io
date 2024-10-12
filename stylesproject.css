@@ -42,7 +42,7 @@ header {
 /* Project Title Styling */
 .project-title {
     font-size: 2rem; /* Increased size for better visibility */
-    color: #ccc; /* White color */
+    color: white; /* White color */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow for contrast */
     z-index: 1; /* Set higher z-index */
 }
@@ -51,7 +51,7 @@ header {
 .project-description {
     font-style: italic;
     font-size: 1.1rem;
-    color: #ccc;
+    color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow for contrast */
     z-index: 1; /* Set higher z-index */
 }
@@ -64,7 +64,7 @@ header {
     border-radius: 5px;
     background-color: transparent;
     transition: background-color 0.3s;
-    color: #ccc;
+    color: white;
     text-decoration: none;
     font-size: 0.8rem;
     text-align: center;
@@ -85,6 +85,7 @@ header {
     margin-bottom: 2rem;
     gap: 20px;
     z-index: 1;
+    color: white;
 }
 
 /* Align project section */
@@ -95,6 +96,7 @@ header {
     width: calc(50% - 10px); /* Ensure two projects fit side by side with a gap */
     text-align: center; /* Center the text */
     z-index: 1;
+    color: white;
 }
 
 /* Set a fixed height for images and videos */
