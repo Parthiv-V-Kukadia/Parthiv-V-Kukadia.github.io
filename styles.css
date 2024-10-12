@@ -1,23 +1,28 @@
 body {
-    background: linear-gradient(to bottom, #001f3f 0%, #001d3f 25%, #001a4d 50%, #001e5c 75%, #002b8d 100%); 
-    color: white;
-    font-family: 'Montserrat', sans-serif; 
-    margin: 0;
-    padding: 0;
-}
-
-body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensure the body takes the full height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow: hidden; /* Prevent scrollbars from appearing */
+}
+
+/* Video Background */
+#background-video {
+    position: fixed; /* Keep the video fixed in place */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the entire background */
+    z-index: -1; /* Place behind other content */
 }
 
 /* The header takes the top part of the gradient */
 header {
     text-align: center; 
     padding: 100px 20px; 
-    background: linear-gradient(to bottom, #001f3f, transparent); /* Gradient from dark blue to transparent */
-    height: 300px; /* Adjust based on your design */
+    position: relative; /* Ensure it appears above the video */
 }
 
 /* Style the name */
@@ -51,7 +56,7 @@ p {
 }
 
 .social-icons img {
-    filter; brightness(0) invert(1); /* Change color to white */
+    filter: brightness(0) invert(1); /* Change color to white */
     width: 50px; /* Increased icon size */
     height: 50px; /* Maintain aspect ratio */
     margin: 0 10px; /* Space between icons */
@@ -59,7 +64,7 @@ p {
 
 /* Button styles */
 .button {
-    background-color: #238636;
+    background-color: #238636; /* Green background for buttons */
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -67,7 +72,7 @@ p {
 }
 
 .button:hover {
-    background-color: #2ea043;
+    background-color: #2ea043; /* Darker green on hover */
 }
 
 /* Additional styles for the typed effect */
@@ -124,4 +129,3 @@ p {
         padding: 15px; /* Less padding */
     }
 }
-
