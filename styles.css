@@ -95,3 +95,20 @@ p {
     margin: 0 10px; /* Space around the dot */
     color: white; /* Adjust the color of the dots if desired */
 }
+
+footer {
+    background-color: #001f3f; /* Example: Dark blue */
+    color: white; /* Text color */
+    padding: 20px; /* Padding for space around content */
+    text-align: center; /* Centering footer text */
+    font-size: 1rem; /* Adjust size as needed */
+    margin: 10px 0; /* Spacing between footer elements */
+}
+
+@media (max-width: 600px) {
+    footer {
+        font-size: 0.9rem; /* Smaller text on mobile */
+        padding: 15px; /* Less padding */
+    }
+}
+
