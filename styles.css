@@ -107,16 +107,15 @@ p {
 }
 
 .location-section h2 {
-    font-size: 1rem; /* Reduced size */
+    font-size: 0.9rem; /* Reduced size */
 }
 
 .footer {
     margin-top: auto; /* Pushes footer to the bottom */
     background: linear-gradient(to top, #001f3f, #001d3f, #001a4d, #001e5c, #002b8d); /* Gradient for footer */
     color: white; /* Text color */
-    text-align: left; /* Center text */
+    text-align: center; /* Center text */
     padding: 10px 20px; /* Padding for space around content */
-    font-size: 0.1 rem; /* Smaller font size */
 }
 
 @media (max-width: 600px) {
