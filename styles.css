@@ -31,7 +31,7 @@ h1 {
 
 /* Style the typing effect text */
 p {
-    font-size: 1.5rem;
+    font-size: 2 rem;
     font-weight: bold; /* Make the subtitle bold */
     color: white; /* White color for the text under name */
     margin-top: 0;
