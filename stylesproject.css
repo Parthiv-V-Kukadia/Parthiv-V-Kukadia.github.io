@@ -84,24 +84,24 @@ header {
 
 /* Standard layout for project containers */
 .project-box{
+    color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 2rem;
     gap: 20px;
     z-index: 1;
-    color: white;
 }
 
 /* Align project section */
 .project {
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Align items at the start */
     width: calc(50% - 10px); /* Ensure two projects fit side by side with a gap */
     text-align: center; /* Center the text */
     z-index: 1;
-    color: white;
 }
 
 /* Set a fixed height for images and videos */
