@@ -91,11 +91,12 @@ header {
 .project-box {
     color: white;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centering projects horizontally */
+    flex-direction: column; /* Ensure items stack vertically */
+    justify-content: flex-start; /* Align items at the start */
     margin-bottom: 2rem;
     gap: 20px;
     z-index: 1;
+    text-align: center; /* Center the text */
 }
 
 /* Align project section */
