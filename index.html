@@ -7,25 +7,27 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> <!-- Added Montserrat -->
 </head>
-    
+
 <body>
     <!-- Video Background -->
-    <video autoplay muted loop id="background-video">
-        <source src="images/stars.mp4" type="video/mp4"> 
+    <video autoplay muted loop playsinline id="background-video">
+        <source src="images/stars.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    
+
     <!-- Overlay Div -->
     <div class="overlay"></div>
-    
+
+    <!-- Header Section -->
     <header>
-        <h1>Parthiv V Kukadia</h1>
-        <p> I'm <span class="typed-text" id="typed-text"></span><span class="cursor" id="cursor"></span></p>
+        <h1>Parthiv V. Kukadia</h1>
+        <p>I'm <span class="typed-text" id="typed-text"></span><span class="cursor" id="cursor"></span></p>
+
         <!-- Social Icons -->
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/parthiv-k/" target="_blank">
                 <img src="images/linkedin.png" alt="LinkedIn">
-            </a> 
+            </a>
             <a href="https://github.com/Parthiv-V-Kukadia" target="_blank">
                 <img src="images/github.png" alt="GitHub">
             </a>
@@ -36,43 +38,46 @@
                 <img src="images/resume.png" alt="Resume">
             </a>
         </div>
+
         <!-- View Demo Projects Section -->
         <p style="text-align: center; margin-top: 1rem;">
-            <a href="projects.html" class="project-link">
-                CHECK OUT MY PROJECT DEMOS!
-            </a>
+            <a href="projects.html" class="project-link">CHECK OUT MY PROJECT DEMOS!</a>
         </p>
     </header>
-        
+
+    <!-- Intro Message -->
     <div class="intro-message" style="text-align: center; color: white;">
-        <p style="font-size: 1.2rem; margin-top: 0.1rem; margin-bottom: 1.5rem;">Greetings, Digital Wanderer! Ready to Explore? 🚀 </p>
-        <p style="font-size: 0.9rem; margin-bottom: 0.2rem;">👆 Click on the icons to zoom into my LinkedIn galaxy, browse my GitHub Portfolio, shoot me a message, check out my Qualifications, or view my Demos!</p>
-        <p style="font-size: 0.9rem; margin-bottom: 0.2rem;">🤖 I can't wait to connect with you soon! Let’s unleash some tech magic together! ✨</p>
+        <p style="font-size: 1.2rem; margin-top: 0.1rem; margin-bottom: 1.5rem;">
+            Greetings, Digital Wanderer! Ready to Explore? 🚀
+        </p>
+        <p style="font-size: 0.9rem; margin-bottom: 0.2rem;">
+            👆 Click on the icons to zoom into my LinkedIn galaxy, browse my GitHub Portfolio, shoot me a message, check out my Qualifications, or view my Demos!
+        </p>
+        <p style="font-size: 0.9rem; margin-bottom: 0.2rem;">
+            🤖 I can't wait to connect with you soon! Let’s unleash some tech magic together! ✨
+        </p>
     </div>
 
-    <!-- Footer Message Section -->
+    <!-- Footer Section -->
     <div class="footer">
         <div class="location-section" style="text-align: center; margin-top: 1rem;">
             <h2 style="font-size: 1.2rem;">📍 My Global Footprint</h2>
             <p style="font-size: 0.9rem; font-weight: normal;">
-                <span class="location">🇹🇭 Bangkok</span>
-                <span class="separator"> • </span>
-                <span class="location">🇭🇰 Hong Kong</span>
-                <span class="separator"> • </span>
-                <span class="location">🇮🇳 Mumbai</span>
-                <span class="separator"> • </span>
-                <span class="location">🇺🇸 Chicago</span>
-                <span class="separator"> • </span>
-                <span class="location">🇺🇸 New York</span>
-                <span class="separator"> • </span>
+                <span class="location">🇹🇭 Bangkok</span> •
+                <span class="location">🇭🇰 Hong Kong</span> •
+                <span class="location">🇮🇳 Mumbai</span> •
+                <span class="location">🇺🇸 Chicago</span> •
+                <span class="location">🇺🇸 New York</span> •
                 <span class="location">🇸🇬 Singapore</span>
             </p>
         </div>
-        <p style="font-size: 0.7rem; text-align: center; font-weight: italic;">© 2024 Parthiv Vinubhai Kukadia. All rights reserved.</p>
+        <p style="font-size: 0.7rem; text-align: center; font-weight: italic;">
+            © 2024 Parthiv Vinubhai Kukadia. All rights reserved.
+        </p>
     </div>
 
+    <!-- JavaScript for Typing Effect -->
     <script>
-        // JavaScript to create the typing effect
         const textArray = ["a Roboticist", "an Aerospace Engineer", "a Data & Quantitative Analyst", "a Tech Enthusiast"];
         let currentTextIndex = 0;
         let currentCharIndex = 0;
@@ -96,12 +101,12 @@
                 setTimeout(eraseText, 100);
             } else {
                 currentTextIndex = (currentTextIndex + 1) % textArray.length;
-                setTimeout(typeText, 500); // Pause before typing new text
+                setTimeout(typeText, 500); // Pause before typing the new text
             }
         }
 
         document.addEventListener('DOMContentLoaded', function () {
-            setTimeout(typeText, 1000); // Start typing after 1 second delay
+            setTimeout(typeText, 1000); // Start typing after a 1-second delay
         });
     </script>
 </body>
