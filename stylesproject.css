@@ -47,6 +47,7 @@ header {
 /* Project Title Styling */
 .project-title {
     color: white;
+    text-align: center;
     font-size: 2rem; /* Increased size for better visibility */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow for contrast */
     z-index: 1; /* Set higher z-index */
@@ -55,6 +56,7 @@ header {
 /* Project Description Styling */
 .project-description {
     color: white;
+    text-align: center;
     font-style: italic;
     font-size: 1.1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow for contrast */
@@ -73,6 +75,7 @@ header {
     text-decoration: none;
     font-size: 0.8rem;
     text-align: center;
+    align-items: center; /* Center content horizontally */
     margin: 10px auto; /* Center it by using auto margin */
     width: fit-content; /* Ensure the button only takes the width of its content */
     position: relative; /* Ensure it's in the correct stacking context */
