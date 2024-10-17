@@ -4,7 +4,8 @@ body {
     min-height: 100vh; /* Ensure the body takes the full height */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
-    overflow: hidden; /* Prevent scrollbars from appearing */
+    overflow-x: hidden; /* Prevent horizontal scrollbars */
+    overflow-y: auto; /* Allow vertical scrolling */
     color: white; /* Default text color */
     font-family: 'Montserrat', sans-serif; 
 }
@@ -27,7 +28,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Dark overlay with 50% opacity */
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
     z-index: 0; /* Place it above the video */
 }
 
@@ -46,12 +47,6 @@ h1 {
     font-weight: bold; /* Make it bold */
     margin: 0;
     padding-bottom: 20px; /* Add some spacing below the name */
-}
-
-/* Intro Container */
-.intro-container {
-    position: relative; /* Allow the overlay to be positioned above */
-    z-index: 1; /* Set higher z-index */
 }
 
 /* Style the typing effect text */
@@ -102,31 +97,33 @@ p {
     margin: 0 10px; /* Space between icons */
 }
 
+/* Project Link Box */
 .project-link-box {
-        background-color: rgba(255, 255, 255, 0.1); /* Light background */
-        border: 2px solid #fff; /* White border */
-        border-radius: 5px; /* Reduced border-radius for a less rounded effect */
-        padding: 10px; /* Reduced padding for smaller inner content area */
-        margin-top: 1rem; /* Reduced space above the project link */
-        text-align: center; /* Center the text */
-    }
-    
-    .project-link {
-        display: inline-block; /* Make it a block-level element */
-        padding: 5px 10px; /* Reduced padding for smaller link box */
-        border: 2px solid #fff; /* White border */
-        border-radius: 3px; /* Smaller rounded corners */
-        background-color: transparent; /* Transparent background */
-        transition: background-color 0.3s; /* Smooth transition for hover effect */
-        color: #fff; /* White text color */
-        text-decoration: none; /* Remove underline */
-        font-size: 1.5rem;
-    }
-    
-    .project-link:hover {
-        background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
-    }
+    background-color: rgba(255, 255, 255, 0.1); /* Light background */
+    border: 2px solid #fff; /* White border */
+    border-radius: 5px; /* Reduced border-radius */
+    padding: 10px; /* Reduced padding */
+    margin-top: 1rem; /* Reduced space */
+    text-align: center; /* Center the text */
+}
 
+.project-link {
+    display: inline-block; /* Make it a block-level element */
+    padding: 5px 10px; /* Reduced padding */
+    border: 2px solid #fff; /* White border */
+    border-radius: 3px; /* Smaller rounded corners */
+    background-color: transparent; /* Transparent background */
+    transition: background-color 0.3s; /* Smooth transition */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.5rem;
+}
+
+.project-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+}
+
+/* Intro Message */
 .intro-message {
     color: white; /* Set text color to white */
     text-align: center; /* Center the text */
