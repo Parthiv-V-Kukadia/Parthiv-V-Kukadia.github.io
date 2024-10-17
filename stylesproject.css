@@ -65,7 +65,7 @@ header {
 
 /* 'View Project on GitHub' link */
 .github-link {
-    display: block; /* Changed to block to center it */
+    display: block; /* Ensures it's a block element */
     padding: 5px 10px;
     border: 2px solid #fff;
     border-radius: 5px;
@@ -74,8 +74,7 @@ header {
     color: white;
     text-decoration: none;
     font-size: 0.8rem;
-    text-align: center;
-    align-items: center; /* Center content horizontally */
+    text-align: center; /* Centered text */
     margin: 10px auto; /* Center it by using auto margin */
     width: fit-content; /* Ensure the button only takes the width of its content */
     position: relative; /* Ensure it's in the correct stacking context */
@@ -103,7 +102,7 @@ header {
 .project {
     color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack items vertically */
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
     width: calc(50% - 10px); /* Ensure two projects fit side by side with a gap */
@@ -117,7 +116,7 @@ video, img {
     max-width: 500px; /* Set a fixed width */
     max-height: 400px; /* Set a fixed height */
     margin: 0 auto; /* Center the elements */
-    object-fit: fill; /* Maintain aspect ratio while filling the fixed size */
+    object-fit: cover; /* Maintain aspect ratio while filling the fixed size */
     z-index: 1;
 }
 
