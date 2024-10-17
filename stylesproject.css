@@ -83,7 +83,7 @@ header {
 }
 
 /* Standard layout for project containers */
-.project-container {
+.project-box{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -111,6 +111,7 @@ video, img {
     max-height: 400px; /* Set a fixed height */
     margin: 0 auto; /* Center the elements */
     object-fit: fill; /* Maintain aspect ratio while filling the fixed size */
+    z-index: 1;
 }
 
 /* Full-width sections */
