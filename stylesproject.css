@@ -51,6 +51,7 @@ header {
     font-size: 2rem; /* Increased size for better visibility */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow for contrast */
     z-index: 1; /* Set higher z-index */
+    margin-bottom: 0.5rem; /* Adjust margin-bottom to reduce gap */
 }
 
 /* Project Description Styling */
@@ -61,6 +62,7 @@ header {
     font-size: 1.1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow for contrast */
     z-index: 1; /* Set higher z-index */
+    margin-top: 0; /* Remove top margin if any */
 }
 
 /* 'View Project on GitHub' link */
