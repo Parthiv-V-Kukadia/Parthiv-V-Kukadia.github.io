@@ -143,12 +143,14 @@ p {
     color: white; /* Ensure all paragraph text is white */
     font-size: 1.2rem; /* Maintain your desired font size */
     margin-bottom: 1rem; /* Maintain your margin */
+    z-index: 1; /* Set higher z-index */
 }
 
 /* Ensure a minimum height to allow scrolling */
 .main-content {
     flex: 1; /* Allow this section to grow */
     padding: 20px; /* Add padding for content */
+        z-index: 1; /* Set higher z-index */
 }
 
 /* Footer Section */
@@ -161,15 +163,16 @@ p {
     padding: 10px 20px; /* Padding for space around content */
 }
 
-/* Fallback background image for mobile */
 @media (max-width: 600px) {
     #background-video {
-        display: none; /* Hide video on mobile */
+        /* Ensure the video is visible and plays on mobile */
+        display: block; /* Keep video on mobile */
+        autoplay: true; /* Enable autoplay */
+        loop: true; /* Enable looping */
     }
 
     body {
-        background: url('your-fallback-image.jpg') no-repeat center center fixed;
-        background-size: cover;
+        background-color: #000; /* Keep background black for mobile */
     }
 
     h1 {
