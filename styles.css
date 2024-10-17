@@ -9,6 +9,11 @@ body {
     background: black; /* Fallback background for cases when the video is not displayed */
 }
 
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Video Background */
 #background-video {
     position: fixed; /* Keep the video fixed in place */
