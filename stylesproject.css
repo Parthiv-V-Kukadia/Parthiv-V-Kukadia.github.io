@@ -63,7 +63,7 @@ header {
 
 /* 'View Project on GitHub' link */
 .github-link {
-    display: inline-block;
+    display: block; /* Changed to block to center it */
     padding: 5px 10px;
     border: 2px solid #fff;
     border-radius: 5px;
@@ -73,6 +73,8 @@ header {
     text-decoration: none;
     font-size: 0.8rem;
     text-align: center;
+    margin: 10px auto; /* Center it by using auto margin */
+    width: fit-content; /* Ensure the button only takes the width of its content */
     position: relative; /* Ensure it's in the correct stacking context */
     z-index: 1; /* Ensure the link is above the overlay */
 }
@@ -83,11 +85,11 @@ header {
 }
 
 /* Standard layout for project containers */
-.project-box{
+.project-box {
     color: white;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center; /* Centering projects horizontally */
     margin-bottom: 2rem;
     gap: 20px;
     z-index: 1;
@@ -98,7 +100,8 @@ header {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align items at the start */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
     width: calc(50% - 10px); /* Ensure two projects fit side by side with a gap */
     text-align: center; /* Center the text */
     z-index: 1;
