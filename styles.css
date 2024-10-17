@@ -28,7 +28,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Dark overlay with 50% opacity */
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
     z-index: 0; /* Place it above the video */
 }
 
@@ -47,12 +47,6 @@ h1 {
     font-weight: bold; /* Make it bold */
     margin: 0;
     padding-bottom: 20px; /* Add some spacing below the name */
-}
-
-/* Intro Container */
-.intro-container {
-    position: relative; /* Allow the overlay to be positioned above */
-    z-index: 1; /* Set higher z-index */
 }
 
 /* Style the typing effect text */
@@ -101,8 +95,14 @@ p {
     width: 50px; /* Increased icon size */
     height: 50px; /* Maintain aspect ratio */
     margin: 0 10px; /* Space between icons */
+    transition: transform 0.2s ease; /* Smooth transition for hover effect */
 }
 
+.social-icons img:hover {
+    transform: scale(1.1); /* Slightly increase icon size on hover */
+}
+
+/* Project link styles */
 .project-link-box {
     background-color: rgba(255, 255, 255, 0.1); /* Light background */
     border: 2px solid #fff; /* White border */
