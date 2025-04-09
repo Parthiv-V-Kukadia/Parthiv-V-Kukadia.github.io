@@ -17,13 +17,13 @@ The website is built using standard web technologies:
 
 * **HTML:** For structuring the content of the pages (`index.html`, `projects.html`).
 * **CSS:** For styling the appearance of the website (`styles.css`, `stylesproject.css`).
-* **Potentially JavaScript:** For interactive elements (though not explicitly visible in the file list, it's a common addition).
+* **Potentially JavaScript:** For interactive elements
 * **Images:** Stored in the `images/` directory for visual content.
 
 The repository also includes:
 
-* `projects/`: A directory likely containing details or separate files related to specific projects.
-* `Profile.JPG`: An image file, likely a profile picture of Parthiv.
+* `projects/`: A directory containing details or separate files related to specific projects.
+* `Profile.JPG`: A profile picture of Parthiv.
 * `README.md`: This file, providing information about the repository.
 
 ## Accessing the Website
